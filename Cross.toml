@@ -1,2 +1,5 @@
+[target.armv7-unknown-linux-gnueabihf]
+image = "spotifyd-deps:armhf"
+
 [target.aarch64-unknown-linux-gnu]
 image = "spotifyd-deps:arm64"

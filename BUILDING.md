@@ -1,3 +1,7 @@
+# Cross compiling for armhf
+docker build -t spotifyd-deps:armhf --file armhf.Dockerfile .
+cross run --target armv7-unknown-linux-gnueabihf --features alsa_backend,dbus_mpris -v --release
+
 # Cross compiling for arm64
 docker build -t spotifyd-deps:arm64 --file aarch64.Dockerfile .
 cross run --target aarch64-unknown-linux-gnu --features alsa_backend,dbus_mpris -v --release
